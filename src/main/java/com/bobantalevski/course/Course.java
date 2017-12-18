@@ -10,10 +10,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Course extends BaseEntity{
 
+  @NotNull
+  @Size(min = 2, max = 140)
   private String title;
   private String url;
   @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
