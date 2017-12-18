@@ -73,7 +73,7 @@ public class DatabaseLoader implements ApplicationRunner {
         new User("albertqerimi", "Albert",  "Qerimi", "password", new String[] {"ROLE_USER"})
     );
     users.save(students);
-    users.save(new User("Boban", "Talevski", "bobtal", "12345", new String[] {"ROLE_USER", "ROLE_ADMIN"}));
+    users.save(new User("bobtal", "Boban", "Talevski", "12345", new String[] {"ROLE_USER", "ROLE_ADMIN"}));
 
 //    Craig's way
 //    List<Course> bunchOfCourses = new ArrayList<>();
