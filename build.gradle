@@ -25,6 +25,9 @@ dependencies {
     compile 'com.h2database:h2'
     // https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-hal-browser
     compile 'org.springframework.data:spring-data-rest-hal-browser'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    compile 'org.springframework.boot:spring-boot-starter-security'
+
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
